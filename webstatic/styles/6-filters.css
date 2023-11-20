@@ -62,6 +62,7 @@
     border: #DDDDDD 1px solid;
     border-radius: 4px;
     box-sizing: border-box;
+    z-index: 9999;
 }
 .popover ul {
     list-style: none;
