@@ -1,6 +1,7 @@
 .filters {
     height: 70px;
     width: 100%;
+    
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     position: relative;
@@ -27,22 +28,22 @@
 }
 
 .locations, .amenities {
-    margin: 0;
     height: 100%;
     width: 25%;
+    display: grid;
+    align-items: center;
+    position: relative;
     line-height: 0;
+}
+.locations .content, .amenities .content {
     padding-left: 35px;
     
-}
-.locations div, .amenties div {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
 }
 .locations h3, .amenities h3 {
     font-weight: 600;
 }
 .locations h4, .amenities h4 {
+    
     font-weight: 400;
     font-size: 14px;
 }
@@ -50,3 +51,30 @@
     border-right: #DDDDDD 1px solid;
 }
 
+.popover {
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 30px 20px;
+    background-color: #FAFAFA;
+    width: 100%;
+    border: #DDDDDD 1px solid;
+    border-radius: 4px;
+    list-style: none;
+    line-height: 0.3;
+    box-sizing: border-box;
+}
+.popover h2 {
+    font-size: 16px;
+}
+
+.popover li p {
+    margin-left: 15px;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block;
+}
