@@ -33,9 +33,10 @@
     display: grid;
     align-items: center;
     position: relative;
-    line-height: 0;
+    
 }
 .locations .content, .amenities .content {
+    line-height: 0;
     padding-left: 35px;
     
 }
@@ -56,23 +57,20 @@
     margin: 0;
     position: absolute;
     top: 70px;
-    left: 0;
-    padding: 30px 20px;
     background-color: #FAFAFA;
     width: 100%;
     border: #DDDDDD 1px solid;
     border-radius: 4px;
-    list-style: none;
-    line-height: 0.3;
     box-sizing: border-box;
+}
+.popover ul {
+    list-style: none;
 }
 .popover h2 {
     font-size: 16px;
-}
-
-.popover li p {
     margin-left: 15px;
 }
+
 
 .locations:hover .popover,
 .amenities:hover .popover {
